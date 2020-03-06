@@ -130,6 +130,68 @@
 <div class="card">
     
     <div class="card-image">
+        <a href="/2020/03/06/ubuntu/" class="image is-7by1">
+            <img class="thumbnail" src="/image/ubuntu1.png" alt="ubuntu">
+        </a>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-06T15:20:08.000Z">2020-03-06</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    19 minutes read (About 2820 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2020/03/06/ubuntu/">ubuntu</a>
+            
+        </h1>
+        <div class="content">
+            <h1 id="windows10-Ubuntu双系统安装"><a href="#windows10-Ubuntu双系统安装" class="headerlink" title="windows10+Ubuntu双系统安装"></a>windows10+Ubuntu双系统安装</h1><p> &emsp;&emsp;由于图像课程，所以需要安装Ubuntu系统。为什么不用虚拟机，是因为考虑到虚拟机运行效率太 低，毕竟是一个硬件（笔记本）同时运行两个系统。而双系统整体上运行效率会更高，因此最后选择了装Ubuntu双系统。于是我查阅了相关的教程，尤其是csdn，但是不得不说，目前的一些教程对于现在UEFI  Bios启动模式的电脑来说，是很不适用的。当然如果你的Bios启动模式是legacy的，那么可以去百度一些其他的安装方式，应该都是可以的。在这篇教程中，我主要是介绍UEFI的一个安装方式。</p>
+<h2 id="问题1"><a href="#问题1" class="headerlink" title="问题1"></a>问题1</h2><p>&emsp;&emsp;有些同学会问，什么是UEFI和legacy启动方式，那么在这里就告诉大家应该怎么查看自己电脑的启动方式。键盘<kbd>win</kbd>+<kbd>r</kbd>进入命令控制台，然后输入msinfo32，在右侧找到【BIOS模式】，如果显示的是UEFI，那么就是UEFI的启动模式啦。如果你是UEFI启动模式那么你就可以接着往下看了。</p>
+<h4 id="第一步：下载系统镜像"><a href="#第一步：下载系统镜像" class="headerlink" title="第一步：下载系统镜像"></a>第一步：下载系统镜像</h4><p>&emsp;&emsp;首先要下载Ubuntu系统的镜像文件，在这里需要注意不要在Ubuntu官网上下载，因为Ubuntu官网的站点应该是在国外，国内下载会很慢，笔者试过搭梯子下载，依然速度感人。所以在这里我给大家推荐<a href="http://mirrors.163.com/ubuntu-releases/">网易的镜像下载</a> 。注意的是我这里选择的是release版本，也就是相对稳定的版本，我也推荐大家用这个版本，具体选择18.04.4版本下载就可以了。</p>
+<h4 id="第二步：硬盘分区"><a href="#第二步：硬盘分区" class="headerlink" title="第二步：硬盘分区"></a>第二步：硬盘分区</h4><p>&emsp;&emsp;<kbd>win</kbd>+<kbd>x</kbd>然后选择磁盘管理，然后大家自己分区就可以，具体操作很简单，网上都有。但是这里要注意几个分区的问题。</p>
+<p>&emsp;&emsp;首先我默认大家都有两个硬盘以上，如果大家只有一个系统硬盘，那我不建议装双系统，有时候windows和Ubuntu系统在同一盘会出现问题。</p>
+<p>&emsp;&emsp;那么对于多个系统盘来说，首先我们在系统盘（一般是c盘）分区200m的空白分区用来安装Ubuntu的启动项。当然你也可以直接装在window启动项里，百度也有人会推荐这样装，但是我发现并不是每个人的windows启动项预留空间都是足够的，所以为了避免麻烦，这个分区我认为是有必要的。</p>
+<p>&emsp;&emsp;接下来从你的非系统盘中划分空间，在这里有些教程只划分40g，我不建议，40G对于长期使用Ubuntu是不够的，我个人认为150G是一个合适的空间，当然大家可以根据实际情况进行选择。</p>
+<p>&emsp;&emsp;最后需要注意的是，硬盘压缩出空间后不要分配卷，正常情况分出空闲区应该是显示的一个黑色边框的分区。</p>
+        </div>
+        
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2020/03/06/ubuntu/#more">Read More</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    
+<div class="card">
+    
+    <div class="card-image">
         <a href="/2020/02/26/hello-world-1/" class="image is-7by1">
             <img class="thumbnail" src="/image/my_image.jpg" alt="hello-world">
         </a>
@@ -216,11 +278,11 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Post
+                        Posts
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            1
+                            2
                         </p>
                     </a>
                 </div>
@@ -365,6 +427,25 @@
         
         <article class="media">
             
+            <a href="/2020/03/06/ubuntu/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/image/ubuntu1.png" alt="ubuntu">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-06T15:20:08.000Z">2020-03-06</time></div>
+                    <a href="/2020/03/06/ubuntu/" class="title has-link-black-ter is-size-6 has-text-weight-normal">ubuntu</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2020/02/26/hello-world-1/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/image/my_image.jpg" alt="hello-world">
@@ -392,6 +473,17 @@
             Archives
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/03/">
+                <span class="level-start">
+                    <span class="level-item">March 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2020/02/">
@@ -441,6 +533,25 @@
         
         <article class="media">
             
+            <a href="/2020/03/06/ubuntu/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/image/ubuntu1.png" alt="ubuntu">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-06T15:20:08.000Z">2020-03-06</time></div>
+                    <a href="/2020/03/06/ubuntu/" class="title has-link-black-ter is-size-6 has-text-weight-normal">ubuntu</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2020/02/26/hello-world-1/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/image/my_image.jpg" alt="hello-world">
@@ -468,6 +579,17 @@
             Archives
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/03/">
+                <span class="level-start">
+                    <span class="level-item">March 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2020/02/">
